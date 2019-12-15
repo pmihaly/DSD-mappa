@@ -25,13 +25,16 @@
 backend=biber,
 defernumbers=true
 ]{biblatex}
-\addbibresource{Quellen.bib}
+\usepackage{tocloft}
 
 
 \usepackage{subfiles}
 %--------------------------------------
 
-\title{Technologie - Wird Künsliche Intelligenz die Menschheit vernichten?}
+
+\addbibresource{Quellen.bib}
+
+\title{Technologie - Wird Künzliche Intelligenz Zu Unserem Ende Führen?}
 \author{Mihály Papp \\
   \multicolumn{1}{p{.7\textwidth}}{\centering\emph{Friedrich-Schiller-Gymnasium und Schülerwohnheim, Klasse 12/5}}}
 
@@ -43,6 +46,7 @@ defernumbers=true
 \maketitle
 
 % Inhaltsverzeichnis
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
 \tableofcontents
 \newpage
 
@@ -56,6 +60,7 @@ defernumbers=true
 \printbibliography[title={" "}, heading=subbibliography]
 \newpage
 
+\part{Inhaltsangaben}
 % Textwiedergabe 1: Künzliche Intelligenz: Ende der Monotonie
 \subfile{Sub-dokumenten/Kuenzliche Intelligenz: Ende der Monotonie.tex}
 \newpage

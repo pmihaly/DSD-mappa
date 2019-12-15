@@ -1,0 +1,63 @@
+\documentclass[12pt, a4paper, onecolumn, titlepage]{article}
+% Encoding
+%--------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%--------------------------------------
+ 
+% German-specific commands
+%--------------------------------------
+\usepackage[ngerman]{babel}
+%--------------------------------------
+ 
+% Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{Mathe-matik wieder-gewinnen}
+%--------------------------------------
+
+% Included packages
+%--------------------------------------
+\usepackage{times}
+\usepackage{csquotes}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{Quellen.bib}
+
+
+\usepackage{subfiles}
+%--------------------------------------
+
+\title{Technologie - Wird Künsliche Intelligenz die Menschheit vernichten?}
+\author{Mihály Papp \\
+  \multicolumn{1}{p{.7\textwidth}}{\centering\emph{Friedrich-Schiller-Gymnasium und Schülerwohnheim, Klasse 12/5}}}
+
+\date{Prüfungsjahren 2020-2021}
+
+\begin{document}
+
+% Deckblatt
+\maketitle
+
+% Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+% Begründung der Themenwahl
+\subfile{Sub-dokumenten/Begruendung der Themenwahl.tex}
+\newpage
+
+% Quellenverzeichnis
+\nocite{*}
+\printbibliography[title={Benutze Quellen}]
+\newpage
+
+% Textwiedergabe 1: Künzliche Intelligenz: Ende der Monotonie
+\subfile{Sub-dokumenten/Keunzliche Intelligenz: Ende der Monotonie.tex}
+\newpage
+
+\end{document}

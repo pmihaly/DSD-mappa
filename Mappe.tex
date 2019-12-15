@@ -23,8 +23,7 @@
 \usepackage[onehalfspacing]{setspace}
 \usepackage[
 backend=biber,
-style=alphabetic,
-sorting=ynt
+defernumbers=true
 ]{biblatex}
 \addbibresource{Quellen.bib}
 
@@ -53,7 +52,8 @@ sorting=ynt
 
 % Quellenverzeichnis
 \nocite{*}
-\printbibliography[title={Benutze Quellen}]
+\section{Benutzte Quellen}
+\printbibliography[title={" "}, heading=subbibliography]
 \newpage
 
 % Textwiedergabe 1: Künzliche Intelligenz: Ende der Monotonie
